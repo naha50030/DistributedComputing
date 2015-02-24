@@ -2,15 +2,15 @@ import java.io.*;
 import java.net.*;
 public class TCPServer {
 	
-	private static int TEXT = 1;
-	private static int IMAGE = 2;
-	private static int VIDEO = 3;
-	private static int MUSIC = 4;
+	private final static int TEXT = 1;
+	private final static int IMAGE = 2;
+	private final static int VIDEO = 3;
+	private final static int MUSIC = 4;
 	
-	private static String ROUTER_ADDRESS = "192.168.1.35";
-	private static String SERVER_ADDRESS = "192.168.1.35";
-	private static String CLIENT_ADDRESS = "192.168.1.20";
-	private static int PORT = 5555;
+	private final static String ROUTER_ADDRESS = "192.168.1.35";
+	private final static String SERVER_ADDRESS = "192.168.1.35";
+	private final static String CLIENT_ADDRESS = "192.168.1.20";
+	private final static int PORT = 5555;
 	
 	public static void main(String[] args) throws IOException {
       	
@@ -19,9 +19,9 @@ public class TCPServer {
          PrintWriter out = null; // for writing to ServerRouter
          BufferedReader in = null; // for reading form ServerRouter
 			InetAddress addr = InetAddress.getLocalHost();
-			String host = addr.getHostAddress(); // Server machine's IP			
+			String host = SERVER_ADDRESS; // Server machine's IP			
 			String routerName = ROUTER_ADDRESS; // ServerRouter host name
-			int SockNum = 5555; // port number
+			int SockNum = PORT; // port number
 			
 			// Tries to connect to the ServerRouter
          try {

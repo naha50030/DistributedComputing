@@ -6,7 +6,7 @@
          Socket clientSocket = null; // socket for the thread
          Object [][] RoutingTable = new Object [10][2]; // routing table
 			int SockNum = 5555; // port number
-			Boolean Running = true;
+			boolean Running = true;
 			int ind = 0; // index in the routing table	
 
 			//Accepting connections

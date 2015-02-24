@@ -4,16 +4,16 @@ import java.util.Scanner;
 
     public class TCPClient {
     	
-    	private static int TEXT = 1;
-    	private static int IMAGE = 2;
-    	private static int VIDEO = 3;
-    	private static int MUSIC = 4;
-    	private static int[] INPUTS = {TEXT, IMAGE, VIDEO, MUSIC};
+    	private final static int TEXT = 1;
+    	private final static int IMAGE = 2;
+    	private final static int VIDEO = 3;
+    	private final static int MUSIC = 4;
+    	private final static int[] INPUTS = {TEXT, IMAGE, VIDEO, MUSIC};
     	
-    	private static String ROUTER_ADDRESS = "10.99.3.144";
-    	private static String SERVER_ADDRESS = "10.99.3.144";
-    	private static String CLIENT_ADDRESS = "10.99.22.254";
-    	private static int PORT = 5555;	
+    	private final static String ROUTER_ADDRESS = "10.99.3.144";
+    	private final static String SERVER_ADDRESS = "10.99.3.144";
+    	private final static String CLIENT_ADDRESS = "10.99.22.254";
+    	private final static int PORT = 5555;	
     	
         public static void main(String[] args) throws IOException {
         	
